@@ -1,0 +1,89 @@
+/* src/styles/tabs.css */
+.tabs-container {
+  background-color:  #353c44;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  /* Added shadow */
+  margin-bottom: 1rem;  /* Ensure spacing between the sections */
+  position: relative;
+}
+
+.tabs-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.tab-button {
+  padding: 0.5rem 1.5rem;
+  border-radius: 9px;
+  border-radius: -0.15rem;
+  text-align: center;
+  font-weight: 500;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  flex: 1;
+  background-color: #2d2f34;
+  color: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 1); 
+}
+
+.tab-button.active {
+  background-color: #28292e;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 3);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.tab-button.inactive {
+  background-color: #141414;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+  transform: translateY(2px);
+  color: #a0aec0;
+}
+
+.tab-content {
+  background-color: #4a5568;
+  padding: 1rem;
+  border-radius: 0.95rem;
+  color: #e2e8f0;
+}
+
+/* Line under the tabs container */
+.tabs-footer-line {
+  height: 2px;
+  background-color: #444;
+  width: 100%;
+  position: absolute;
+  bottom: -15px;  /* Position it outside the box */
+  left: 0;
+}
+
+.tabs-buttons, .gallery-container {
+    margin-bottom: 1rem; /* Adjust this to reduce spacing */
+  }
+  
+  .tabs-container, .gallery-container {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    padding-left: 2rem;  /* Slightly stronger shadow */
+  }
+
+  .tab-button:hover, .add-image-button:hover {
+    transform: translateY(-2px);  /* Lift the button */
+    background-color: #383a42;  /* Lighter on hover */
+  }
+
+  .tab-button, .add-image-button {
+    border-radius: 25px;  /* Adjust this value as needed */
+  }
+
+  .tabs-container::after, .gallery-container::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);  /* Subtle line */
+    margin: 0 auto;
+    opacity: 0.5;
+  }
+  
+  

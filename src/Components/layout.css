@@ -1,0 +1,47 @@
+/* src/styles/layout.css */
+@media screen and (min-width: 1024px) {
+    .container {
+      max-width: 80%;
+      margin: auto;
+    }
+  }
+  
+.layout-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #272b30;
+  }
+  
+  @media (min-width: 768px) {
+    .layout-container {
+      flex-direction: row;
+    }
+  }
+  
+  .left-column {
+    display: none;
+    padding: 2.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .left-column {
+      display: block;
+      width: 50%;
+    }
+  }
+  
+  .right-column {
+    width: 100%;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .right-column {
+      width: 50%;
+    }
+  }
+  

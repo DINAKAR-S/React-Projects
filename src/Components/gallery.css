@@ -1,0 +1,148 @@
+/* src/styles/gallery.css */
+
+.gallery-container {
+  background-color: #353c44;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  /* Added shadow */
+  margin-bottom: 1rem;  /* Ensure spacing between the sections */
+  position: relative;
+}
+
+.gallery-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.gallery-title {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.gallery-controls {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.button-style {
+  padding: 0.5rem 1rem;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 0.75rem;
+  transition: background-color 0.3s ease;
+}
+
+.button-style:hover {
+  background-color: #4a5568;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  /* Display 3 images per row */
+  gap: 1rem;
+}
+
+.gallery-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tabs-buttons, .gallery-container {
+    margin-bottom: 1rem; /* Adjust this to reduce spacing */
+  }
+  
+.gallery-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+  
+.navigation-button:disabled {
+  background-color: #2d3748;  /* Gray for disabled state */
+  cursor: not-allowed;
+
+}
+
+/* Line under the gallery container */
+.gallery-footer-line {
+  height: 2px;
+  background-color: #444;
+  width: 100%;
+  position: absolute;
+  bottom: -15px;  /* Position it outside the box */
+  left: 0;
+}
+
+
+/* Add shadow effect for Add Image button */
+.add-image-button {
+  padding: 0.5rem 1.5rem;
+  background-color: #41454e;  /* Updated color */
+  color: #ffffff;
+  border-radius: 30px;  /* Slightly rounded */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4); 
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  font-size: 0.81rem;
+  font-weight: bold;
+}
+  
+.add-image-button:hover {
+  background-color: #383a42;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.6);   /* Darker on hover */
+}
+  
+  /* Add shadow effect for Arrow buttons */
+.navigation-button {
+  width: 40px;
+  height: 40px;
+  background-color: #28292e;  /* Updated color */
+  color: #ffffff;
+  border-radius: 50%;  /* Fully circular */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);  /* Shadow with a soft spread */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+  
+.navigation-button:hover {
+    background-color: #4a5568;  /* Lighter on hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.6);  /* Stronger shadow on hover */
+}
+
+.tabs-container, .gallery-container {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    padding-left: 2rem;  /* Slightly stronger shadow */
+  }
+
+  .tab-button:hover, .add-image-button:hover {
+    transform: translateY(-2px);  /* Lift the button */
+    background-color: #383a42;  /* Lighter on hover */
+  }
+  
+  .tab-button, .add-image-button {
+    border-radius: 25px;  /* Adjust this value as needed */
+  }
+
+  .tabs-container::after, .gallery-container::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);  /* Subtle line */
+    margin: 0 auto;
+    opacity: 0.5;
+  }
+  .gallery-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;  /* Adjust as necessary for spacing */
+  }
+    
+  

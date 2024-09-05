@@ -1,0 +1,27 @@
+/* src/styles/app.css */
+/* Additional app-level styles */
+a {
+    color: #4a90e2;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  @media screen and (min-width: 1024px) {
+    .App {
+      max-width: 80%;
+      margin: auto;
+    }
+  }
+
+  .App {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .tabs-container, .gallery-container {
+    padding-left: 2rem; /* Adjust padding for alignment */
+  }
+  
