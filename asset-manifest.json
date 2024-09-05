@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/DINAKAR-S/React-Projects/static/css/main.ac1ab2f7.css",
+    "main.js": "/DINAKAR-S/React-Projects/static/js/main.56b963de.js",
+    "index.html": "/DINAKAR-S/React-Projects/index.html",
+    "main.ac1ab2f7.css.map": "/DINAKAR-S/React-Projects/static/css/main.ac1ab2f7.css.map",
+    "main.56b963de.js.map": "/DINAKAR-S/React-Projects/static/js/main.56b963de.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ac1ab2f7.css",
+    "static/js/main.56b963de.js"
+  ]
+}
